@@ -9,7 +9,7 @@ img{max-width:100%;height:auto}
 .h1,h1{font-size:7.5rem}
 .zd-page3{width:100%;min-height:70vh;height:auto;color:#000;padding:0 10%;font-size:1.5rem;display:flex;justify-content:center;align-items:center;position:relative}
 .zd-page2{width:100%;min-height:70vh;height:auto;color:#000;font-size:1.5rem;display:flex;justify-content:center;align-items:center;position:relative;max-width:1300px;margin:0 auto}
-.zd-page3{position:relative;width:100%;width:100%;background-image:url(img/digital_vs._analog_0.jpg);background-attachment:fixed;color:#fff}
+.zd-page3{position:relative;width:100%;width:100%;background-image:url('../img/portfolio_background.jpg');background-attachment:fixed;color:#fff}
 .zd-page4{background:#fff}
 .zd-footer{background-color:#000;height:auto;padding:0 10% 2% 10%}
 .zd-container{max-width:1300px;margin:0 auto}
