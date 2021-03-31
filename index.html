@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Zhang Si YU Design</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="SHORTCUT ICON" href="./img/zd-favicon.png" />
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans Kannada"> -->
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Gidugu" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146880351-2"></script>
+
+</head>
+
+<body>
+	<!-- <div id='webGL-container'>
+		<a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> - OBJLoader test1111111111
+	</div> -->
+	<!-- <div id="loading">
+			<img src="img/zdLogo.svg" alt="loading.." />
+		</div>  -->
+
+	<div class="page1 page">
+		<div class="header">
+			<div class="navwrapper">
+				<div class="nav">
+					<div class="logo desktopshow">
+						<h1 style="margin: 0;"><a href="#"><img src="img/zdLogo.svg" alt=""></a></h1>
+					</div>
+					<ul class="navlist">
+						<li class="iamselected zd-nav-glitch"><a href="#zd-iamabout">About me</a></li>
+						<li class="zd-nav-glitch"><a href="#zd-iamportfolio">Portfolio</a></li>
+						<li class="zd-nav-glitch"><a
+								href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=0"
+								data-fancybox
+								data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "100%"}}}'>Code
+								Exercise</a></li>
+						<li class="zd-nav-glitch"><a href="#zd-designexample">Design Example</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-------------------- MOBILE NAV BEGINS ------------------------>
+
+			<div class="navmobile">
+				<div class="mobilelogo"><a href="#"><img src="img/zdLogo.svg" alt=""></a></div>
+				<div class="toggleMenu"><img
+						src="https://lh3.googleusercontent.com/3Tzf5ICP6hBXeVf1HDVet5GW6Yxp0DA27i51kqEbMKwZVl51YK1-WF-4DrcstNmE-3gR2R9b6NhsoZ7O3oKcVXcMKzXdSBewqMSbLtaVKQSW_N7K-OgwA0c-ycg4gDDwKcNEof4aRfkwkDUle3grstMtWeGFV1A_AKoNEjloSyBxluD67ZK1SZ4rvBEwIWiulL4hYVeeJnaAwBAgnrKILYGJ4_2_w_dTZCDD6a-mZfo88Y26oSH-K794FORGfpwwpYJppOX3tmG7j5gaY7LmXwX0zn6-Kco3hm525gc9qjKYf-w7QKWrn25gwTZiPup0vbgu5iCHFvHdtS_saNxCzZQXWXPAdZA2GTXIGHwRLUdUFU8sSm9WsJo57vrxMUC_U2Axg93l10o-ODaeP_WW2UBrScM07-iTKleOoO3I2m4XFTJX9uVQZUG3em11RlmUc9LPfkw9id7RppkSBTPn06a06x-3urIz0w1lyOS3lBJ1qq5BhWbR3LxNhR1UDujwPyC8t4v8NBgcut7kj2MOSgUjPKcSjPQ1NpSjWuvqdGlekw7tHN35h0kNRsoYDfqoHuSpl_BakFWKbuldYxULWwNopCVu4rgKCPZmevl_Vjam7KBj0M4UxFQwwXFctdNI8fmj3oKS1xSSNrZsUw_lw_OV1Tjn8LNlZBR-3oZC=s300-no"
+						width="30"></div>
+				<div class="sidemenu">
+					<img class="cross"
+						src="https://lh3.googleusercontent.com/iY0bTr9W_jdRLrqwXshfmqbflUi1Rlo2knWWLvQ5g-V-xdvByUrRtV7DVGYQ9VuK5A_h-AbHFxum1zubtabYAzgLOwGrIMaLPuJarkYHWm6a7h5HMIkhwlYhSBLq8JoW2MsDDRvyYzZMbesUr2EvqNW6yQTzygJbapw8hvxZo4e7t2u6v6_ptGmbmlCP6s0mV3jIHhca4TvQEp_UyGV6hhVzSmb0KhqguSpzdcPv3Z7G3-4tK88y6wtCUp1FKBfZkeBlHiSrBchIC8dDGNx4EvSC3_nd17x-vQRu9LlZWvM9KUbBdGMwSQKHXH7Uw9wtuqRVzQ2To024bFayR2uGAQ0MoM1YsFUStFB0NV_mJ_AtLSljfoAph0hu7uozenJASjI8oj2w1xtYrB3L0rcIBzOjC4R0bOw_jB5KOhYz7bB-LZax-KUvnrvaQS9LqG3UCEXzLdO81_mFWV_1pAuPv4DxFap8f5_WQy0-iyhq_76GRGswm2_pA1QwNlGtDgFZd2nqz36LBcbuuV8V3FELFOVZe_4KXULgcoFqL0zdhfEW4jhF28oGJ6ErnThvTMb6VR6_GknX5_2smz3cd9Yc6kkHv0pklcvFbKGIJpw9wrYYB8r5DOVxmGR0u7u5x-ZQoRjpwlhMHSNKAW4u4FeHnZYgJF6-_guWZwIWO1s7=s256-no"
+						width="20">
+					<ul class="navlistmobile">
+						<li><a href="#zd-iamabout">About me</a></li>
+						<li><a href="#zd-iamportfolio">Portfolio</a></li>
+						<li><a href="https://codepen.io/dashboard?type=view&opts_itemType=pen&opts_filter=all&opts_orderBy=id&opts_orderDirection=0&opts_tag=0&displayType=grid&previewType=iframe&page=0"
+							data-fancybox
+							data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "100%"}}}'>Code Exercise</a></li>
+						<li><a href="#zd-designexample">Design Example</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-------------------- MOBILE NAV ENDS -------------------------->
+		</div>
+		<!------------------------------- NAV ENDS ---------------------->
+		<div class="page1content">
+			<div class="page1Text">
+				<h1 class="glitch">ZHANG <br>SI YU </h1>
+				<h6>Visual Design x Front End Developer</h6>
+			</div>
+			<div>
+				<a href="#zd-iamabout" class="arrow bounce">SCROLL DOWN<span class="fa fa-arrow-down fa-2x"></span>
+				</a>
+			</div>
+			<div class="zd-music-position">
+				<div class="bar-c"> <span class="zd-music-btn">♫</span>
+					<div id="bar-1" class="bar"></div>
+					<div id="bar-2" class="bar"></div>
+					<div id="bar-3" class="bar"></div>
+					<div id="bar-4" class="bar"></div>
+					<div id="bar-5" class="bar"></div>
+					<div id="bar-6" class="bar"></div>
+				</div>
+
+				<audio id="audio" autoplay="autoplay">
+					<source
+						src="https://res.cloudinary.com/dspnzppuu/video/upload/v1560264043/Xtract_-_AT_Day_2016_Original_Music_Video__1_tvmnip.mp3"
+						type="audio/mpeg">
+				</audio>
+			</div>
+			<canvas id="c" style="width:100%;"></canvas>
+
+		</div>
+	</div>
+	<div class="zd-page2 page" id="zd-iamabout">
+		<div class="row">
+			<div class="col-12 col-md-4">
+				<section class="myphoto-fixed">
+					<img src="./img/myphoto_3.gif" alt="">
+					<p>
+						張嗣渝
+						<span>Zhang Si Yu</span>
+						<br>
+						76.06.26
+						♋ </p>
+				</section>
+			</div>
+			<div class="col-12 col-md-8 mx-auto">
+				<div class="page2-content outer-wrapper">
+					<h1 class="glitch2">AUTOIOGRAPHY</h1>
+					<div class="wrapper">
+						<p class="zd-goodmark">
+							<span style="color:#30cfd0;"> ㊝ </span>
+							<span style="color:#3080d0;">㊝</span>
+							<span style="color:#6330d0;">㊝</span>
+						</p>
+						<p style="clear: both">
+							<div class="zd-about-title-wrap">
+								<span class="zd-about-title">
+									相關背景：</span>
+								<span
+									class="zd-about-title-r">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<span
+									class="zd-about-title-g">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</div>
+							<br>
+							<span class="text-indent">
+								本身是高中與大學都就讀設計科系,比較有相關的大概就是學校有網頁設計的課程,在那個時期架網站技術教的就是Dreamweaver,
+								不過說到過去像我們讀設計科系的,都會很畏懼網頁設計吧,除了邏輯要清楚要懂點英文,還有可能要接觸到程式碼呢！
+								這對於過去習慣用右腦在思考的我們，實在太痛苦了，所以理所當然我自己就。。。全部還給老師了。
+							</span>
+							<br>
+							<span class="text-indent">
+								畢業之後就一直從事設計相關工作將近十年的期間,大部分的時間都在桃園,相對設計類型的工作在桃園比較少,
+								所以當自己在30歲決定換下一份工作的時候,也沒有太多選擇,反正自己接觸過的設計類型也不少,
+								那就都試看看吧!就這樣誤打誤撞的跑到了科技業。
+							</span>
+							<br>
+							<span class="text-indent">
+								進入科技業到現在差不多三年的時間了,從第一年開始什麼都不懂,只會設計並且也對ＲＷＤ一無所知,當時有徬徨了一陣子,也曾經想放棄過,到後來決定還是繼續堅持下去！！並且因為在這當中一直有在做前端的自學,反而讓
+								原本的設計更加融會貫通,第二年開始慢慢有機會開始切版,而我本身設計科系出身的,畫面結構生成其實對我來說是如魚得水,以往設計圖要轉Zeplin給工程師的流程,到我自己接手切版就省掉這個流程了。越來越熟悉上手Html&Css後,猶如開啟魔戒一般想學習更多的東西,開始更加深入了解javascript,然後又開始進入了撞牆期。。。,只是這次的撞牆期涉及的成面更廣,原因有對資訊架構知識太薄弱、英文不好、沒有實戰經驗等。。。(題外話:我認識這些條件都好的工程師都是前後端大神啊！),儘管前面一道高牆在,
+								但熱情卻沒因此而熄滅,下班及假日利用有限的時間上課和閱讀來不斷充實自己📚。
+							</span>
+							<br>
+							<span class="text-indent">
+								就這樣持續保持努力,第三年在我毛吹自薦之下,主管讓我開始在公司學習接API寫程式了,也因為有設計跟切版的優勢外部多了很多side
+								project的學習機會,直到現在雖然覺得自己還稱不上前端工程師,不過最近看到一個詞叫做“前端設計師”?!
+								應該可以準確套用在自己身上（誤,接著我會一直告訴自己不管有沒有成為真正的前端,其實學習這些都是我人生很寶貴的經驗跟養份
+								最後就帶著這個“前端設計師”身份繼續往“前端工程師”方向努力邁進啦！<br>
+							</span>
+							<br>
+							<div class="zd-about-title-wrap">
+								<span class="zd-about-title">
+									學習程式經驗：</span>
+								<span
+									class="zd-about-title-r">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<span
+									class="zd-about-title-g">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</div>
+							<br>
+							在六角學院有上過<br>
+							JavaScript入門篇 - 學徒的試煉/Vue出一個電商網站/Node.js 前後端開發實戰/線上直播課程<br>
+							<hr>
+							JavaScript入門篇：<br>這是我購買的第一堂課程,淺顯易懂搭配圖像化的教學是我當初購買它的原因。<br><br>
+							Vue 出一個電商網站：<br>學完JS接著為因應框架趨勢,加上這個課程也有完整的帶大家如何從0到1去實現架設電商網站,是我第二堂購買的課程。<br><br>
+							Node.js 前後端開發實戰：<br>購買這個課程則是因為不是相關科系,我想多更了解一些前後端的知識概念。<br><br>
+							<span class="text-indent">
+								除了上述這些課程我也會去買其他的網路課程跟大量的書籍來自學
+								但比較起來我依舊蠻喜歡上六角的課程，原因是我覺得六角學院的課程內容精緻,老師可以把比較艱深的事情講的淺顯易懂,而且youtube上也會不時更新一些資源,
+								很適合我這種金魚腦。呈如我前面所說的一開始要從右腦轉到左腦真的並不容易，試想好比去跟你身邊就讀工程學系的朋友談談色彩學吧～
+							</span>
+							<span class="text-indent">
+								現階段學習程式的時間都是利用下班跟side project之餘，時間很有限,所以我自己的學習習慣是遇到不懂的地方就會先停下來,
+								多看看不同的資料或別的類型前端知識,感覺水到渠成的時候有些東西自然就通了～
+							</span>
+							<span class="art-error-background">
+
+							</span>
+							<br>
+							<div class="zd-about-title-wrap">
+								<span class="zd-about-title">
+									面試前的準備：</span>
+								<span
+									class="zd-about-title-r">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<span
+									class="zd-about-title-g">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</div>
+							<br>
+							<span class="text-indent">
+								進我現在這間公司是面試網頁設計的職務,讀設計科系都知道準備作品集去面試是一定要的,當然我覺得前端工程師也很需要,
+								畢竟整個網站的視覺的好壞就掌握在你手上啦,
+								它可以最快體現出你在這個領域下了多功夫,所以面試前我花了一些精力與費用在作品集上。
+								除了作品集的準備,另外一個準備就是預設好面試官可能會問哪些問題,然後去上網看一下大家如何做這些應答,也就是類似自己模擬面試,。
+							</span>
+							<br>
+							<div class="zd-about-title-wrap">
+								<span class="zd-about-title">
+									面試共幾關、面試過程：</span>
+								<span
+									class="zd-about-title-r">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<span
+									class="zd-about-title-g">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</div>
+							<br>
+							<br>
+							<span class="text-indent">
+								面試有兩關,第一關是心理測驗,心理測驗其實可以有點作弊的成分,就往好的方面及這個產業的屬性去做答,
+								不過考慮到往後會不會與這個公司文化符合,還是誠心作答吧~第二關就是主管面試,面試大致應該跟大家差不多,會有需要自我介紹及作品介紹等等,以及問一些相關領域的專業知識。
+								公司成員主成員都是工程師,產品業務以政府機關的網站居多,進去的話就只有我一位設計師,
+								然後一開始面試的時候主管就有提除了設計希望以後業務也要可以了解到Html/Css,
+								當下也一口答應了“沒問題”(現在想想不知道哪裡來的勇氣),話說是工作就是一種緣份,機會來了就不要放棄啊！
+								應該也就是這樣我畢業十年後第一次轉職進了科技公司,開啟了小小前端之路～
+							</span>
+						</p>
+						<div class="triangle-style"></div>
+					</div>
+
+					<div id="element" class="see-more">Read More...</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+	<div class="zd-page3 page" id="zd-iamportfolio">
+
+		<div class="page3-content">
+			<div class="profile-wrap">
+				<h1>PORTFOLIO</h1>
+				<h2>PORTFOLIO</h2>
+
+
+			</div>
+
+			<div class="row blog">
+				<div class="col-md-12">
+					<div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+						<ol class="carousel-indicators">
+							<li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#blogCarousel" data-slide-to="1"></li>
+						</ol>
+
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+
+							<div class="carousel-item active">
+								<div class="row">
+									<div class="col-md-3">
+										<a data-caption="<h6 class='mt-5'>翻轉崩潰</h6>創作到一半停電的瞬間表情扭曲猙獰,頭暈到眼冒金星,壓力大到滿臉痘花,下次在創作之前何不像畫面一樣翻轉過來思考,準備好APC,讓你心花怒放,一切萬事都OK!!(運用圖地翻轉將畫面翻轉過來看呈現另一張效果)"
+											data-fancybox="gallery" href="./img/portfolio_1_detail.png"><img
+												src="./img/portfolio_1.jpg"></a>
+									</div>
+									<div class="col-md-3 zd-profile-glitch">
+										<a data-caption="<h6 class='mt-5'>直拉易撕貼動物派對系列 - 明星動物園</h6><a target='_blank' href='http://www.estape.com.tw/index.php?action=product_detail&cid=92&id=303'>http://www.estape.com.tw/index.php?action=product_detail&cid=92&id=303</a><br/>創意設計：一貼就是亮點，不容忽略的可愛動物。"
+											data-fancybox="gallery" href="./img/portfolio_2_detail.png"><img
+												src="./img/portfolio_2.jpg"></a>
+									</div>
+									<div class="col-md-3 zd-profile-glitch">
+										<a data-fancybox="gallery" href="./img/portfolio_4_detail.png"><img
+												src="./img/portfolio_4.png"></a>
+									</div>
+									<div class="col-md-3 zd-profile-glitch">
+										<a data-fancybox="gallery" href="./img/portfolio_3_detail.png"><img
+												src="./img/portfolio_3.jpg"></a>
+									</div>
+								</div>
+								<!--.row-->
+							</div>
+							<!--.item-->
+
+							<div class="carousel-item">
+								<div class="row">
+									<div class="col-md-3 zd-profile-glitch">
+										<a data-fancybox="gallery" href="./img/portfolio_5_detail.png"><img
+												src="./img/portfolio_5.png"></a>
+									</div>
+									<div class="col-md-3">
+										<a data-fancybox="gallery" href="./img/portfolio_6_detail.png"><img
+												src="./img/portfolio_6.png"></a>
+									</div>
+									<div class="col-md-3">
+										<a data-fancybox="gallery" href="./img/portfolio_7_detail.png"><img
+												src="./img/portfolio_7.png"></a>
+									</div>
+									<div class="col-md-3">
+										<a data-fancybox="gallery" href="./img/portfolio_8_detail.png"><img
+												src="./img/portfolio_8.png"></a>
+									</div>
+								</div>
+								<!--.row-->
+							</div>
+							<!--.item-->
+
+						</div>
+						<!--.carousel-inner-->
+					</div>
+					<!--.Carousel-->
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="zd-designexample" class="zd-page4 page">
+		<div class="zd-page4-pd">
+			<h1>DESIGN EXAMPLE</h1>
+			<img src="./img/zd-example-logo.png" alt="">
+		</div>
+		<div class="runman-box">
+			<div class="zd-gifman-basic"></div>
+			<div class="zd-flag"></div>
+			<div class="zd-gifman-move"></div>
+		</div>
+	</div>
+	<div class="zd-footer page">
+		<div class="zd-container">
+			<div class="row">
+				<div class="col-md-7 zd-left-wrap">
+					<p class="zd-footer-work">
+						張嗣渝-Zhang Si Yu
+					</p>
+					<p class="zd-footer-content">
+						<i class="fas fa-phone"></i>
+						<a href="tel:0985661430">0985661430 </a>
+						<i class="fas fa-envelope"></i>
+						<a href="mailto:garyfree2019@gmail.com">
+							garyfree2019@gmail.com
+						</a>
+						<div class="aboutme-link">
+							<a target="_blank"
+								href="https://www.facebook.com/search/top/?q=zhang%20si%20yu%20design&ref=eyJzaWQiOiIwLjI2MjQwNjIwNjQ0MzY4MTYiLCJxcyI6IkpUVkNKVEl5ZW1oaGJtY2xNakJ6YVNVeU1IbDFKVEl3WkdWemFXZHVKVEl5SlRWRSIsImd2IjoiYmVlMDlmOTNmYTczMmNmYTU5YTFjYjZkOWY0NTBkMzg5MjQyNGU0OSIsImVudF9pZHMiOltdLCJic2lkIjoiNTdjMWI3NDE4ZGI4MmZhNWRmYWViNzk4NDcyZmM0ODgiLCJwcmVsb2FkZWRfZW50aXR5X2lkcyI6bnVsbCwicHJlbG9hZGVkX2VudGl0eV90eXBlIjpudWxsLCJyZWYiOiJicl90ZiIsImNzaWQiOm51bGwsImhpZ2hfY29uZmlkZW5jZV9hcmd1bWVudCI6bnVsbCwiY2xpZW50X3RpbWVfbXMiOjE1Njk4Mzc2MTUyMDB9&epa=SEARCH_BOX">
+								<i class="fab fa-facebook"></i>
+								<i class="fab fa-line"></i>
+							</a>
+						</div>
+
+					</p>
+					<hr>
+					<img src="./img/zd-skill.png" alt="">
+				</div>
+				<div class="col-md-5 zd-right-wrap">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="accordion">
+
+		<div class="card-header messageBoard" id="headingOne">
+			<h5 class="mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+					aria-controls="collapseOne">
+					在底下留個言吧～Click me!!
+				</button>
+			</h5>
+		</div>
+		<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+			<div class="card-body">
+				<div class="zd-container">
+					<div class="flex-center w-100">
+						<input class="zd-message-input" id="txt" type="text" placeholder="請輸入想留言的內容">
+						<input class="zd-message-input" id="name" type="text" placeholder="請輸入您的暱稱">
+						<button id="sendBtn" class="btn">送出</button>
+					</div>
+					<ol class="row" id="list">
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<p class="zd-copyright">
+		Copyright © 2019 張嗣渝 版權所有/music by Xtract - AT Day 2016
+	</p>
+
+
+
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v8.0&appId=400892594070231&autoLogAppEvents=1"
+		nonce="ik9FRdL9"></script>
+
+	<!-- three.js script -->
+	<script type="text/javascript" src="js/three.js"></script>
+	<script src="https://threejsfundamentals.org/threejs/resources/threejs/r103/three.min.js"></script>
+	<script src="https://threejsfundamentals.org/threejs/resources/threejs/r103/js/controls/OrbitControls.js"></script>
+	<script src="https://threejsfundamentals.org/threejs/resources/threejs/r103/js/loaders/LoaderSupport.js"></script>
+	<script src="https://threejsfundamentals.org/threejs/resources/threejs/r103/js/loaders/OBJLoader2.js"></script>
+	<script src="https://threejsfundamentals.org/threejs/resources/threejs/r103/js/loaders/MTLLoader.js"></script>
+	<!-- three.js script -->
+
+	<script src="https://code.jquery.com/jquery-3.4.0.js"
+		integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+		integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+	<script>
+		// Three.js - Load .OBJ and .MTL file
+		// from https://threejsfundamentals.org/threejs/threejs-load-obj-materials.html
+
+		'use strict';
+
+		/* global THREE */
+
+		function main() {
+			const canvas = document.querySelector('#c');
+			const renderer = new THREE.WebGLRenderer({
+				canvas
+			});
+
+			const fov = 45;
+			const aspect = 2; // the canvas default
+			const near = 0.1;
+			const far = 100;
+			const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+			camera.position.set(0, 10, 20);
+
+			const controls = new THREE.OrbitControls(camera, canvas);
+			controls.target.set(0, 5, 0);
+			controls.update();
+
+			const scene = new THREE.Scene();
+			scene.background = new THREE.Color('black');
+
+			{
+				const planeSize = 20;
+
+				const loader = new THREE.TextureLoader();
+				const texture = loader.load(
+					'https://res.cloudinary.com/dspnzppuu/image/upload/v1559570502/floorback-01_ksyiiy.png');
+				texture.wrapS = THREE.RepeatWrapping;
+				texture.wrapT = THREE.RepeatWrapping;
+				texture.magFilter = THREE.NearestFilter;
+				const repeats = planeSize / 15;
+				texture.repeat.set(repeats, repeats);
+
+				const planeGeo = new THREE.PlaneBufferGeometry(planeSize, planeSize);
+				const planeMat = new THREE.MeshPhongMaterial({
+					map: texture,
+					side: THREE.DoubleSide,
+				});
+				const mesh = new THREE.Mesh(planeGeo, planeMat);
+				mesh.rotation.x = Math.PI * -.5;
+				scene.add(mesh);
+			}
+
+			{
+				const skyColor = 0xFFFFFF; // light blue
+				const groundColor = 0xFFFFFF; // brownish orange
+				const intensity = 0.1;
+				const light = new THREE.HemisphereLight(skyColor, groundColor, intensity);
+				light.position.set(10, 10, 10);
+				scene.add(light);
+			}
+
+			{
+				const color = 0xFFFFFF;
+				const intensity = 1.6;
+				const light = new THREE.SpotLight(color, intensity);
+				light.position.set(5, 10, 2);
+				scene.add(light);
+				scene.rotateY(-0.3);
+				scene.translateY(0);
+
+				scene.translateX(3);
+				scene.add(light.target);
+			}
+			// 背後光點
+			var starsGeometry = new THREE.Geometry(); // creates new geometry
+
+			for (var i = 0; i < 100000; i++) { // Adds a partilce on each loop i < 10000 = 9999 particles rendered
+
+				var star = new THREE.Vector3();
+				star.x = THREE.Math.randFloatSpread(
+					2000
+				); // changing number will decrease or increase particle density; the smaller the number the more dense the particles
+				star.y = THREE.Math.randFloatSpread(
+					2000
+				); // changing number will decrease or increase particle density; the smaller the number the more dense the particles
+				star.z = THREE.Math.randFloatSpread(
+					2000
+				); // changing number will decrease or increase particle density; the smaller the number the more dense the particles
+
+				starsGeometry.vertices.push(star);
+			}
+
+			var starsMaterial = new THREE.PointsMaterial({
+				color: 0x0000ff
+			});
+
+			var starField = new THREE.Points(starsGeometry, starsMaterial);
+
+			scene.add(starField);
+			// 背後光點
+
+			{
+
+				const objLoader = new THREE.OBJLoader2();
+				objLoader.loadMtl('https://res.cloudinary.com/dspnzppuu/raw/upload/v1568732076/zdprofile-n-1_dwjtf1.mtl',
+					null, (
+						materials) => {
+						objLoader.setMaterials(materials);
+						objLoader.load(
+							'https://res.cloudinary.com/dspnzppuu/raw/upload/v1568732087/zdprofile-n-1_g5wcqq.obj',
+							(
+								event) => {
+								const root = event.detail.loaderRootNode;
+								scene.add(root);
+
+							});
+					});
+			}
+
+
+			function resizeRendererToDisplaySize(renderer) {
+				const canvas = renderer.domElement;
+				const width = canvas.clientWidth;
+				const height = canvas.clientHeight;
+				const needResize = canvas.width !== width || canvas.height !== height;
+				if (needResize) {
+					renderer.setSize(width, height, false);
+				}
+				return needResize;
+			}
+
+			function render() {
+
+				if (resizeRendererToDisplaySize(renderer)) {
+					const canvas = renderer.domElement;
+					camera.aspect = canvas.clientWidth / canvas.clientHeight;
+					camera.updateProjectionMatrix();
+				}
+
+				renderer.render(scene, camera);
+
+				requestAnimationFrame(render);
+
+				starField.rotation.z += 0.002;
+				starField.rotation.x -= 0.002;
+				starField.rotation.y += 0.002; // Runs every frame giving it the animation
+
+			}
+
+			requestAnimationFrame(render);
+		}
+
+		main();
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-146880351-2');
+	</script>
+
+
+	<!-- google地圖 設計設定 -->
+	<script>
+		function initMap() {
+			// The location of Uluru
+			var uluru = {
+				lat: 25.0375787,
+				lng: 121.2975948
+			};
+			// The map, centered at Uluru
+			var map = new google.maps.Map(
+				document.getElementById('map'), {
+					zoom: 16,
+					center: uluru,
+					styles: [{
+							elementType: 'geometry',
+							stylers: [{
+								color: '#242f3e'
+							}]
+						},
+						{
+							elementType: 'labels.text.stroke',
+							stylers: [{
+								color: '#242f3e'
+							}]
+						},
+						{
+							elementType: 'labels.text.fill',
+							stylers: [{
+								color: '#746855'
+							}]
+						},
+						{
+							featureType: 'administrative.locality',
+							elementType: 'labels.text.fill',
+							stylers: [{
+								color: '#00ffff'
+							}]
+						},
+						{
+							featureType: 'poi',
+							elementType: 'labels.text.fill',
+							stylers: [{
+								color: '#848484'
+							}]
+						},
+						{
+							featureType: 'poi.park',
+							elementType: 'geometry',
+							stylers: [{
+								color: '#263c3f'
+							}]
+						},
+						{
+							featureType: 'poi.park',
+							elementType: 'labels.text.fill',
+							stylers: [{
+								color: '#6b9a76'
+							}]
+						},
+						{
+							featureType: 'road',
+							elementType: 'geometry',
+							stylers: [{
+								color: '#38414e'
+							}]
+						},
+						{
+							featureType: 'road',
+							elementType: 'geometry.stroke',
+							stylers: [{
+								color: '#212a37'
+							}]
+						},
+						{
+							featureType: 'road',
+							elementType: 'labels.text.fill',
+							stylers: [{
+								color: '#9ca5b3'
+							}]
+						},
+						{
+							featureType: 'road.highway',
+							elementType: 'geometry',
+							stylers: [{
+								color: '#746855'
+							}]
+						},
+						{
+							featureType: 'road.highway',
+							elementType: 'geometry.stroke',
+							stylers: [{
+								color: '#1f2835'
+							}]
+						},
+						{
+							featureType: 'road.highway',
+							elementType: 'labels.text.fill',
+							stylers: [{
+								color: '#00ffff'
+							}]
+						},
+						{
+							featureType: 'transit',
+							elementType: 'geometry',
+							stylers: [{
+								color: '#2f3948'
+							}]
+						},
+						{
+							featureType: 'transit.station',
+							elementType: 'labels.text.fill',
+							stylers: [{
+								color: '#00ffff'
+							}]
+						},
+						{
+							featureType: 'water',
+							elementType: 'geometry',
+							stylers: [{
+								color: '#17263c'
+							}]
+						},
+						{
+							featureType: 'water',
+							elementType: 'labels.text.fill',
+							stylers: [{
+								color: '#515c6d'
+							}]
+						},
+						{
+							featureType: 'water',
+							elementType: 'labels.text.stroke',
+							stylers: [{
+								color: '#17263c'
+							}]
+						}
+					]
+				});
+			// The marker, positioned at Uluru
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+				title: 'ZHANG SI YU',
+				icon: './img/zd-map-logo.png'
+			});
+		}
+	</script>
+
+	<!-- google map金鑰 -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQRdPr8vkxXhK6AGkvufQnzEL2JbWxM44&callback=initMap"
+		async defer></script>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyDgU7dm6IAxx4VPRRAfZt4OkKX-60zo0Qo",
+			authDomain: "my-project-1569510508638.firebaseapp.com",
+			databaseURL: "https://my-project-1569510508638.firebaseio.com",
+			projectId: "my-project-1569510508638",
+			storageBucket: "my-project-1569510508638.appspot.com",
+			messagingSenderId: "1016843823525",
+			appId: "1:1016843823525:web:cdc202872be5bcb2f4204c"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+
+		var send = document.getElementById('sendBtn');
+		var text = document.getElementById('txt');
+		var lists = document.getElementById('list');
+		var username = document.getElementById('name');
+		var todos = firebase.database().ref('student1');
+		send.addEventListener('click', function (e) {
+			console.log(txt.value)
+			todos.push({
+				name: text.value,
+				nickname: username.value
+
+			})
+		})
+		todos.on('value', function (snapshot) {
+			var str = '';
+			var data = snapshot.val();
+			for (var items in data) {
+				str +=
+					`<li class="col-md-12 message-board-list"> <div class="row"><div class="col-md-6"><span data-key="${items}">${data[items].name}</span></div><div class="col-md-6"><span data-key="${items}">${data[items].nickname}</span></div><div></li>`
+			}
+			lists.innerHTML = str
+
+		})
+	</script>
+</body>
+
+</html>
