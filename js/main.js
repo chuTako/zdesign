@@ -8,28 +8,12 @@ $(document).ready(function(){
 
 	console.log($('.navlist li'));
 
-/************************ to highlight on which section you are ****************/
 
 	$(".navlist li").click(function(){
 		$(this).addClass("iamselected");
 		$(".navlist li").not(this).removeClass("iamselected");  
 	});
 
-/********************* highlight active link when scrolled **************************/
-
-	// $(window).scroll(function(){
-	// 	console.log( $(this).scrollTop());
-	// 	$('.page').each(function(){
-	// 		var sectionoffset = $(this.hash).offset().top;   // saves dist of that hash trom top
-	// 		if(sectionoffset <= $(this).scrollTop()){
-	// 			$(this).addClass('iamselected');
-	// 		}			
-
-	// 	});
-	// });
-
-
-/**************** to change from trans to black when scrolled *************/
 
 	console.log( $(document).scrollTop() );
 
@@ -46,7 +30,7 @@ $(document).ready(function(){
 		}
 
 	});
-/******************** hide n show nav *************************/
+
 
 	$('.toggleMenu').click(function(){
 		$('.sidemenu').addClass("showmenu");
@@ -58,7 +42,6 @@ $(document).ready(function(){
 		$('.toggleMenu').removeClass("changeopacity");
 	});
 
-/************************* menu scales when scrolled ****************************/
 	$(document).scroll(function(){
 		if( $(document).scrollTop() > 250 )
 		{
@@ -100,7 +83,7 @@ $(document).ready(function(){
 
 // 輪播
 $('#blogCarousel').carousel({
-	interval: 4000
+	interval: 9000
 });
 
 

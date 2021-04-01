@@ -207,6 +207,9 @@ a {
         /* hides the logo after certain scroll*/
         display: block;
     }
+    .hidden-desktop{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1445,7 +1448,7 @@ a {
     color: rgb(178, 178, 178);
     margin-top: 0;
     margin-bottom: 0px;
-    padding-bottom: 36px;
+    padding-bottom: 16px;
 }
 
 
@@ -1701,7 +1704,6 @@ a {
 }
 
 .fa-envelope {
-    margin-left: 15px;
     color: #0ff;
     cursor: pointer;
 }
@@ -1748,6 +1750,7 @@ a {
 .zd-footer-content a {
     color: #fff;
     font-size: inherit;
+    cursor: url("../img/cursor-btn.png"), auto;
 }
 
 
@@ -1959,6 +1962,17 @@ a {
     -webkit-animation: zd-about-title-arrow 3s infinite;
 }
 
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+#list .message-board-list:nth-child(odd){
+    width: 100%;
+    height: auto;
+    background-color: #00ffe1;
+}
+
 @-webkit-keyframes zd-about-title-arrow {
     0% {}
     50% {
@@ -1993,7 +2007,7 @@ a {
     }
     .arrow {
         left: 36%;
-        font-size: 16px;
+        font-size: 14px;
     }
     .zd-footer img {
         max-width: 100%;
@@ -2008,4 +2022,30 @@ a {
     .art-error-background {
         display: none;
     }
+    .zd-footer-content .flex-center{
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: end!important;
+    }
+    .zd-footer-phone,.zd-footer-envelope{
+        margin: 10px 0px;
+    }
+    .zd-message-input{
+        margin-bottom: 15px;
+    }
+    .zd-gifman-move {
+        animation: none;
+        -webkit-animation: none;
+    }
+    .runman-box {
+        zoom: 0.6;
+    }
+
+    .hidden-mobile{
+        display: none;
+    }
+    .carousel-item .col-md-3{
+        margin-bottom: 15px;
+    }
 }
+
